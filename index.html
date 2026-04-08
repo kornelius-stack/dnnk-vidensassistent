@@ -256,11 +256,46 @@
     border-radius: 2px;
   }
 
-  .result-hint {
-    font-size: 0.75rem;
+  .result-excerpt {
+    font-size: 0.8rem;
     color: var(--muted);
-    margin: 0.3rem 0 0.5rem;
-    font-style: italic;
+    line-height: 1.6;
+    margin: 0.5rem 0;
+  }
+
+  .result-excerpt mark {
+    background: #FFF3C4;
+    color: var(--text);
+    padding: 0 2px;
+    border-radius: 2px;
+  }
+  .result-excerpt {
+    font-size: 0.8rem;
+    color: var(--muted);
+    line-height: 1.6;
+    margin: 0.4rem 0 0.6rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .result-excerpt mark {
+    background: #FFF3C4;
+    color: var(--text);
+    padding: 0 2px;
+    border-radius: 2px;
+  }
+  .result-excerpt {
+    font-size: 0.8rem;
+    line-height: 1.65;
+    color: var(--muted);
+    margin: 0.4rem 0 0.6rem;
+  }
+  .result-excerpt mark {
+    background: #FFF3C4;
+    color: var(--text);
+    padding: 0 2px;
+    border-radius: 2px;
   }
   .result-actions {
     display: flex;
@@ -315,6 +350,32 @@
   }
 
   .chat-link:hover svg { stroke: var(--dnnk-green); }
+
+  .copy-link {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.35rem 0.85rem;
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    border-radius: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .copy-link:hover {
+    border-color: var(--dnnk-blue);
+    color: var(--dnnk-blue);
+  }
+
+  .copy-link.copied {
+    border-color: var(--dnnk-green);
+    color: var(--dnnk-green);
+  }
 
   .result-no-link {
     font-size: 0.7rem;
@@ -554,6 +615,39 @@
     border-right: 1px solid var(--dnnk-blue);
   }
 
+  .transcript-box {
+    display: none;
+    margin-top: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: var(--bg);
+    border-left: 3px solid var(--dnnk-green);
+    font-size: 0.78rem;
+    line-height: 1.7;
+    color: var(--text);
+    white-space: pre-wrap;
+    max-height: 300px;
+    overflow-y: auto;
+    border-radius: 0 2px 2px 0;
+  }
+  .transcript-box.visible { display: block; }
+  .show-transcript-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.35rem 0.85rem;
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    border-radius: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .show-transcript-btn:hover { border-color: var(--dnnk-green); color: var(--dnnk-green); }
+  .show-transcript-btn.open { border-color: var(--dnnk-green); color: var(--dnnk-green); background: #EBF4F9; }
+
   .spinner {
     display: inline-block;
     width: 12px;
@@ -697,16 +791,22 @@ function highlight(text, query) {
   return result;
 }
 
-function getExcerpt(content, query, length=300) {
+function getExcerpt(content, query, length=400) {
   const words = query.toLowerCase().split(' ').filter(w => w.length > 2);
   const lower = content.toLowerCase();
   let bestPos = 0, bestScore = 0;
-  for (let i = 0; i < content.length - length; i += 50) {
+  for (let i = 0; i < Math.min(content.length - length, 50000); i += 50) {
     const chunk = lower.slice(i, i + length);
     const score = words.reduce((s, w) => s + (chunk.includes(w) ? 1 : 0), 0);
     if (score > bestScore) { bestScore = score; bestPos = i; }
   }
-  return '...' + content.slice(bestPos, bestPos + length) + '...';
+  const raw = (bestPos > 0 ? '...' : '') + content.slice(bestPos, bestPos + length) + (bestPos + length < content.length ? '...' : '');
+  // Fremhæv søgeord
+  let result = raw;
+  words.forEach(w => {
+    result = result.replace(new RegExp('(' + w.replace(/[.*+?^${}()|[\]\]/g, '\$&') + ')', 'gi'), '<mark>$1</mark>');
+  });
+  return result;
 }
 
 function getTitle(n) {
@@ -775,10 +875,11 @@ async function doSearch() {
       titleEl.textContent = title;
       card.appendChild(titleEl);
 
-      const hintEl = document.createElement('div');
-      hintEl.className = 'result-hint';
-      hintEl.textContent = 'Klik for at chatte om dette webinar';
-      card.appendChild(hintEl);
+      // Vis relevant uddrag fra transskriptionen
+      const excerptEl = document.createElement('div');
+      excerptEl.className = 'result-excerpt';
+      excerptEl.innerHTML = highlight(getExcerpt(content, query), query);
+      card.appendChild(excerptEl);
 
       const actEl = document.createElement('div');
       actEl.className = 'result-actions';
@@ -798,6 +899,49 @@ async function doSearch() {
       chatBtn.textContent = 'Spørg om dette webinar';
       chatBtn.onclick = e => { e.stopPropagation(); openInChat(file.name, query); };
       actEl.appendChild(chatBtn);
+
+      const copyBtn = document.createElement('button');
+      copyBtn.className = 'chat-link';
+      copyBtn.textContent = '📋 Kopier transskription';
+      copyBtn.onclick = async e => {
+        e.stopPropagation();
+        try {
+          const resp = await fetch(file.download_url);
+          const text = await resp.text();
+          await navigator.clipboard.writeText(text);
+          copyBtn.textContent = '✓ Kopieret!';
+          copyBtn.style.color = 'var(--dnnk-green)';
+          setTimeout(() => {
+            copyBtn.textContent = '📋 Kopier transskription';
+            copyBtn.style.color = '';
+          }, 2000);
+        } catch(e) {
+          copyBtn.textContent = '❌ Fejl';
+        }
+      };
+      actEl.appendChild(copyBtn);
+
+      // Kopier transskription knap
+      const copyBtn = document.createElement('button');
+      copyBtn.className = 'copy-link';
+      copyBtn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Kopier til Claude';
+      copyBtn.onclick = async e => {
+        e.stopPropagation();
+        try {
+          const resp = await fetch(file.download_url);
+          const txt = await resp.text();
+          await navigator.clipboard.writeText(txt);
+          copyBtn.textContent = '✓ Kopieret!';
+          copyBtn.classList.add('copied');
+          setTimeout(() => {
+            copyBtn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Kopier til Claude';
+            copyBtn.classList.remove('copied');
+          }, 2000);
+        } catch(e) {
+          copyBtn.textContent = 'Fejl';
+        }
+      };
+      actEl.appendChild(copyBtn);
 
       card.appendChild(actEl);
       document.getElementById('results').appendChild(card);
