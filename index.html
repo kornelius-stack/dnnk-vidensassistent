@@ -786,10 +786,12 @@ function detectCategory(n) {
 function highlight(text, query) {
   let result = text;
   query.split(' ').filter(w => w.length > 2).forEach(w => {
-    const safe = w.replace(/[.*+?^${}()|[\]\]/g, '\$&');
     try {
-      result = result.replace(new RegExp('(' + safe + ')', 'gi'), '<mark>$1</mark>');
+      result = result.split(w).join('<mark>' + w + '</mark>');
     } catch(e) {}
+  });
+  return result;
+}
   });
   return result;
 }
