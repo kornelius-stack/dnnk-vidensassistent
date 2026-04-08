@@ -759,7 +759,11 @@ async function doSearch() {
       const youtubeUrl = m ? 'https://youtube.com/watch?v=' + m[1].trim() : null;
       const card = document.createElement('div');
       card.className = 'result-card';
-      card.onclick = () => openInChat(file.name, query);
+      // Klik på kort åbner YouTube hvis tilgængeligt, ellers ingenting
+      card.onclick = () => {
+        if (youtubeUrl) window.open(youtubeUrl, '_blank');
+      };
+      card.style.cursor = youtubeUrl ? 'pointer' : 'default';
 
       const catEl = document.createElement('span');
       catEl.className = 'result-category';
