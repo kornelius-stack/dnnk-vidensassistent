@@ -447,7 +447,7 @@ async function sendChat() {
       addMessage('assistant', text);
       chatHistory.push({ role: 'model', parts: [{ text }] });
     } else {
-      addMessage('assistant', 'Fejl fra API: ' + JSON.stringify(data) — prøv igen om et øjeblik.');
+      addMessage('assistant', 'Kunne ikke generere svar — prøv igen om et øjeblik. — prøv igen om et øjeblik.');
     }
   } catch(e) {
     thinking.remove();
