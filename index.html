@@ -461,8 +461,15 @@ async function sendChat() {
   // Build context
   let context = loadedContext;
   if (!context) {
-    const matches = await findRelevantFiles(query);
-    context = matches.slice(0, 3).map(m => '[' + getTitle(m.file.name) + ']\n' + m.content.slice(0, 2000)).join('\n\n---\n\n');
+    // Søg kun i allerede-indlæste filnavne som hint til AI
+    const words = query.toLowerCase().split(/\s+/).filter(w => w.length > 2);
+    const relevant = allFiles
+      .filter(f => words.some(w => f.name.toLowerCase().includes(w)))
+      .slice(0, 5)
+      .map(f => getTitle(f.name));
+    context = relevant.length > 0
+      ? 'Relevante webinarer baseret på søgeord: ' + relevant.join(', ') + '\n\n(Tip: Søg i Søg-fanen og tryk "Spørg om dette webinar" for at chatte om et specifikt webinar med fuld transskription.)'
+      : 'Ingen specifik transskription er indlæst. Tip: Søg i Søg-fanen og tryk "Spørg om dette webinar" for at chatte om et specifikt webinar.';
   }
 
   const systemPrompt = `Du er vidensassistent for DNNK (Det Nationale Netværk for Klimatilpasning). Besvar spørgsmål præcist og kun baseret på de vedlagte transskriptioner. Angiv altid hvilket webinar informationen stammer fra. Hvis svaret ikke fremgår af transskriptionerne, siger du det klart. Svar på dansk.
