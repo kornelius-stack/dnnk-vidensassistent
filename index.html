@@ -292,13 +292,16 @@ async function findRelevantFiles(query) {
   const words = query.toLowerCase().split(/\s+/).filter(w => w.length > 1);
   const matches = [];
 
+  // Fetch all files with a per-request timeout of 5s
   await Promise.all(pool.map(async file => {
     try {
-      const resp = await fetch(file.download_url);
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 5000);
+      const resp = await fetch(file.download_url, { signal: controller.signal });
+      clearTimeout(timer);
       const fileContent = await resp.text();
       const lower = fileContent.toLowerCase();
-      // Score both filename and content
-      const nameScore = words.reduce((s, w) => s + (file.name.toLowerCase().split(w).length - 1) * 3, 0);
+      const nameScore = words.reduce((s, w) => s + (file.name.toLowerCase().split(w).length - 1) * 5, 0);
       const contentScore = words.reduce((s, w) => s + (lower.split(w).length - 1), 0);
       const score = nameScore + contentScore;
       if (score > 0) matches.push({ file, content: fileContent, score });
