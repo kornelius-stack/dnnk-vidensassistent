@@ -409,6 +409,17 @@ async function doSearch() {
         actEl.appendChild(a);
       }
 
+      // DNNK.dk link - søg efter webinaret på hjemmesiden
+      const dnnkSearchTerm = encodeURIComponent(title.slice(0, 60));
+      const dnnkLink = document.createElement('a');
+      dnnkLink.href = 'https://www.dnnk.dk/?s=' + dnnkSearchTerm;
+      dnnkLink.target = '_blank';
+      dnnkLink.className = 'youtube-link';
+      dnnkLink.style.cssText = 'background:#EBF4F9;color:var(--dnnk-blue);border-color:var(--dnnk-blue);';
+      dnnkLink.textContent = 'Find på dnnk.dk';
+      dnnkLink.onclick = e => e.stopPropagation();
+      actEl.appendChild(dnnkLink);
+
       const chatBtn = document.createElement('button');
       chatBtn.className = 'action-btn';
       chatBtn.textContent = 'Spørg om dette webinar';
