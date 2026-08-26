@@ -146,6 +146,48 @@ def extract_youtube_id(url: str) -> str | None:
     return m.group(1) if m else None
 
 
+# Høsteren skriver selv video-id'et to steder i hver transskription:
+# i filnavnet (transcribe.py l.176, fetch_youtube_subs.py l.145) og som
+# "Video ID:"-linje i headeren. Indekset læste ingen af dem og gættede i
+# stedet via fuzzy titelmatch — hvilket er umuligt, når titlen ER filnavnet.
+# 33 af 37 sådanne poster endte derfor uden link til deres egen video.
+_FN_ID = re.compile(r"_([A-Za-z0-9_-]{11})_\d{8}_\d{6}\.txt$")
+_HDR_ID = re.compile(r"^Video ID:\s*([A-Za-z0-9_-]{11})\s*$", re.M)
+# En titel der stadig bærer høsterens dato+klokkeslæt er filnavnet, ikke en titel
+_STOEJTITEL = re.compile(r"\b\d{8}[\s_]+\d{6}\b")
+
+
+def id_from_transcript(filename: str, content: str = "") -> str | None:
+    """Video-id'et som høsteren selv skrev. Autoritativt — intet gætværk."""
+    m = _HDR_ID.search(content[:600]) if content else None
+    if m:
+        return m.group(1)
+    m = _FN_ID.search(filename)
+    return m.group(1) if m else None
+
+
+_OEMBED_CACHE: dict[str, str | None] = {}
+
+
+def youtube_title(video_id: str) -> str | None:
+    """Rigtig videotitel via oEmbed. Virker også for unlisted videoer, hvor
+    fetch_youtube_channel() ikke kan se dem — og det er langt de fleste."""
+    if video_id in _OEMBED_CACHE:
+        return _OEMBED_CACHE[video_id]
+    title = None
+    try:
+        r = requests.get(
+            "https://www.youtube.com/oembed",
+            params={"url": f"https://youtu.be/{video_id}", "format": "json"},
+            timeout=15, headers={"User-Agent": "Mozilla/5.0"})
+        if r.status_code == 200:
+            title = (r.json().get("title") or "").strip() or None
+    except Exception:
+        pass
+    _OEMBED_CACHE[video_id] = title
+    return title
+
+
 def decode_filename(filename: str) -> str:
     """'Godmorgen_med_DNNK__Aarhus__erfaringer.mp3.txt' → clean title."""
     name = filename
@@ -154,6 +196,9 @@ def decode_filename(filename: str) -> str:
             name = name[: -len(ext)]
             break
     name = unquote(name)
+    # Klip høsterens id+timestamp-suffiks af, så titlen ikke bliver til støj
+    # som "Tech Talks 2vrQr211cwE 20260806 171134".
+    name = re.sub(r"_[A-Za-z0-9_-]{11}_\d{8}_\d{6}$", "", name)
     name = re.sub(r"_{2,}", ": ", name)   # double underscores → colon
     name = name.replace("_", " ")
     name = re.sub(r"\s+", " ", name).strip()
@@ -722,6 +767,28 @@ def refresh_event_metadata(index: list[dict], dnnk_events: list[dict]) -> int:
         # PDF-dokumenter har ingen dnnk.dk-event — spring dem over
         if entry.get("type") == "pdf":
             continue
+
+        # Backfill af høsterens eget video-id. SKAL ligge før 'if not best:
+        # continue' nedenfor: netop de entries der mangler id'et har en
+        # støjtitel ("Tech Talks 2vrQr211cwE 20260806 171134"), så de finder
+        # aldrig et event og ville aldrig nå længere ned i løkken.
+        # Tælles direkte op i 'updated' — build_index gemmer kun 'if updated'.
+        fn_id = id_from_transcript(entry.get("filename", ""))
+        if fn_id and entry.get("youtube_id") != fn_id:
+            entry["youtube_id"] = fn_id
+            entry["youtube_url"] = f"https://youtube.com/watch?v={fn_id}"
+            updated += 1
+        # Titlen på netop disse entries er filnavnet ("Tech Talks 2vrQr211cwE
+        # 20260806 171134") — ubrugelig i en søgning. Hent den rigtige.
+        # Genkend på høsterens timestamp (8 cifre + 6 cifre), ikke på id'et:
+        # et id med underscore ("uLiX_MX5qA4") står som "uLiX MX5qA4" i titlen
+        # og ville aldrig matche sig selv.
+        if fn_id and _STOEJTITEL.search(entry.get("title") or ""):
+            ægte = youtube_title(fn_id)
+            if ægte:
+                entry["title"] = ægte
+                updated += 1
+
         # Match både på det afkodede filnavn og på den (evt. AI-rettede) titel
         candidates = [decode_filename(entry["filename"])]
         if entry.get("title") and entry["title"] not in candidates:
@@ -745,7 +812,10 @@ def refresh_event_metadata(index: list[dict], dnnk_events: list[dict]) -> int:
         # kommer fra samme tabelrække/underside på dnnk.dk). Overskriv derfor
         # også et FORKERT gemt id — ikke kun et tomt. Uden dette blev gamle
         # fejlmatch fra kanal-fallbacket aldrig rettet igen.
-        if best.get("youtube_id") and entry.get("youtube_id") != best["youtube_id"]:
+        # ... men et id fra filnavnet stammer fra selve hentningen og slår
+        # også event-matchet. Rør det ikke.
+        if (not fn_id and best.get("youtube_id")
+                and entry.get("youtube_id") != best["youtube_id"]):
             entry["youtube_id"] = best["youtube_id"]
             entry["youtube_url"] = best["youtube_url"]
             changed = True
@@ -1123,14 +1193,31 @@ def build_index():
                 print(f"  Warning – kunne ikke parse PDF-header i {filename}; "
                       "bruger filnavnet som titel")
         else:
+            # Høsterens eget id slår al titelmatching: det er skrevet af den
+            # kode der hentede videoen, ikke gættet ud fra en tekststreng.
+            youtube_id = id_from_transcript(filename, content)
+            if youtube_id:
+                youtube_url = f"https://youtube.com/watch?v={youtube_id}"
+                vid = next((v for v in youtube_videos
+                            if v.get("youtube_id") == youtube_id), None)
+                if vid:
+                    # Rigtig titel i stedet for det afkodede filnavn
+                    if vid.get("title"):
+                        title = vid["title"]
+                    if vid.get("upload_date"):
+                        date = vid["upload_date"]
+                print(f"  → id fra transskription: {youtube_id}")
             # Match with dnnk.dk event
             matched, match_confidence = find_best_event(title, dnnk_events)
 
         if matched:
             event_url = matched.get("event_url")
-            youtube_id = matched.get("youtube_id")
-            youtube_url = matched.get("youtube_url")
-            date = matched.get("date")
+            # Et id fra transskriptionen må ikke overskrives af et gæt
+            if not youtube_id:
+                youtube_id = matched.get("youtube_id")
+                youtube_url = matched.get("youtube_url")
+            # Behold en dato vi allerede har, hvis eventet ikke selv har en
+            date = matched.get("date") or date
             # Use DNNK title when match is confident — fixes æ/ø/å lost in filename encoding
             # (find_best_event returnerer kun matches der opfylder _match_acceptable)
             if matched.get("title"):
