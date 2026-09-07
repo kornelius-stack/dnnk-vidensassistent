@@ -50,18 +50,18 @@
         "source_url": null
       },
       {
+        "title": "Samarbejde på tværs v. Henrik Vejre, professor ved Københavns Universitet",
+        "filename": "Oevrige_PKlQbQZRZk0_20260826_180643.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=PKlQbQZRZk0",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
         "title": "Godmorgen med DNNK: Klimatilpasning og kystbeskyttelse i Køge Bugt",
         "filename": "Godmorgen_med_DNNK__Klimatilpasning_og_kystbeskyttelse_i_K_g.mp3.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=Evq4ElsQXKg",
-        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
-        "source_url": null
-      },
-      {
-        "title": "Godmorgen med DNNK: om havstigninger, kystnatur og strandeng",
-        "filename": "Godmorgen_med_DNNK__om_havstigninger__kystnatur_og_strandeng.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=31tDx3ih5yU",
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
@@ -432,18 +432,18 @@
         "source_url": null
       },
       {
-        "title": "Konferencer",
-        "filename": "Konferencer_UBAR1IG7kQ4_20260826_063835.txt",
+        "title": "Arrangementer",
+        "filename": "Arrangementer_zQ7nBjYq6Mk_20260826_115054.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=UBAR1IG7kQ4",
+        "youtube_url": "https://youtube.com/watch?v=zQ7nBjYq6Mk",
         "dnnk_url": null,
         "source_url": null
       },
       {
         "title": "Konferencer",
-        "filename": "Konferencer_ZB7K39iiVOs_20260826_062857.txt",
+        "filename": "Konferencer_UBAR1IG7kQ4_20260826_063835.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=ZB7K39iiVOs",
+        "youtube_url": "https://youtube.com/watch?v=UBAR1IG7kQ4",
         "dnnk_url": null,
         "source_url": null
       }
@@ -1692,19 +1692,19 @@
         "source_url": null
       },
       {
+        "title": "Risikokort CARMS demo",
+        "filename": "Oevrige_DHL6mwwN6c4_20260826_181942.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=DHL6mwwN6c4",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
         "title": "Climate Adaptation Summit 2024 - Karina Barquet",
         "filename": "Climate_Adaptation_Summit_2024_-_Karina_Barquet.mp3.txt",
         "type": "webinar",
         "youtube_url": null,
         "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "Tech Talk - Dynamisk beredskabsplanlægning mod stormfloden",
-        "filename": "Tech_Talk_-_Dynamisk_beredskabsplanl_gning_mod_stormfloden.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=uko6uc4MMag",
-        "dnnk_url": "https://www.dnnk.dk/tech-talks/",
         "source_url": null
       }
     ],
@@ -2738,19 +2738,19 @@
         "source_url": null
       },
       {
-        "title": "Godmorgen med DNNK: Vand fra alle sider truer byerne: klimasikringen",
-        "filename": "Godmorgen_med_DNNK__Vand_fra_alle_sider_truer_byerne___klima.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=rPUXKqmDCKg",
-        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
-        "source_url": null
-      },
-      {
         "title": "Øvrige",
         "filename": "Oevrige_TF8C8Udk1tA_20260826_180400.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=TF8C8Udk1tA",
         "dnnk_url": null,
+        "source_url": null
+      },
+      {
+        "title": "Godmorgen med DNNK: Vand fra alle sider truer byerne: klimasikringen",
+        "filename": "Godmorgen_med_DNNK__Vand_fra_alle_sider_truer_byerne___klima.mp3.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=rPUXKqmDCKg",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
     ],
@@ -4254,11 +4254,88 @@
         "source_url": null
       },
       {
-        "title": "Bidragsmodeller",
-        "filename": "Bidragsmodeller_v.txt",
+        "title": "Øvrige",
+        "filename": "Oevrige_rnL8O4Stv70_20260826_172756.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=rioeMRDhJAU",
+        "youtube_url": "https://youtube.com/watch?v=rnL8O4Stv70",
         "dnnk_url": null,
+        "source_url": null
+      }
+    ]
+  },
+  {
+    "filename": "Oevrige_UUPd8QxmKvE_20260907_102715.txt",
+    "path": "transcriptions/Oevrige_UUPd8QxmKvE_20260907_102715.txt",
+    "folder": "transcriptions",
+    "type": "webinar",
+    "title": "Fremtidens våde regnvandsbassiner - design og dimensionering",
+    "category": "Øvrige",
+    "date": null,
+    "summary": "Webinaret præsenterer resultater fra et vidensopdateringsprojekt om våde regnvandsbassiner, hvor fem danske forsyninger har samarbejdet om at modernisere designet og dimensioneringen baseret på nuværende viden fra 2026 i stedet for det ældre vidensgrundlag fra 2012. Projektet gennemgår anbefalinger, præciseringer og identificerer områder hvor der mangler opdateret viden om regnvandskvalitet og håndtering.",
+    "keywords": [
+      "våde regnvandsbassiner",
+      "regnvandshåndtering",
+      "design og dimensionering",
+      "klimatilpasning",
+      "regnvandskvalitet",
+      "stofudledninger",
+      "separering af regnvand",
+      "spildevandshåndtering",
+      "vidensopdatering",
+      "kysteklimarisiko"
+    ],
+    "speakers": [
+      {
+        "name": "Katrine Nielsen",
+        "org": "Teknologisk Institut"
+      },
+      {
+        "name": "Jens Sterdahl",
+        "org": "Koordinator for regnvandsbassiner"
+      }
+    ],
+    "places": [
+      "Aalborg",
+      "Fredericia",
+      "Danmark"
+    ],
+    "youtube_id": "UUPd8QxmKvE",
+    "youtube_url": "https://youtube.com/watch?v=UUPd8QxmKvE",
+    "dnnk_url": null,
+    "source_url": null,
+    "match_confidence": null,
+    "description": null,
+    "related_resources": [
+      {
+        "title": "Fremtidens våde regnvandsbassiner – design og dimensionering",
+        "url": "https://www.dnnk.dk/fremtidens-vaade-regnvandsbassiner-design-og-dimensionering/",
+        "source": "DNNK Horizon & LIFE",
+        "type": "📄 Dokument"
+      }
+    ],
+    "related_webinars": [
+      {
+        "title": "DNNK Masterclass om håndtering af regnvand v. Teknologisk Institut",
+        "filename": "DNNK_Masterclass_om_h_ndtering_af_regnvand_v._Teknologisk_In.mp3.txt",
+        "type": "webinar",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
+        "title": "DNNK-Masterclass om håndtering af regnvand v. Teknologisk Institut",
+        "filename": "DNNK-Masterclass_om_h_ndtering_af_regnvand_v._Teknologisk_In.mp3.txt",
+        "type": "webinar",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
+        "title": "Godmorgen med DNNK: Webinar om planlægning af regnvandshåndtering",
+        "filename": "Godmorgen_med_DNNK__Webinar_om_planl_gning_af_regnvandsh_ndt.mp3.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=Qk8muDovyb4",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
     ]
@@ -5093,19 +5170,19 @@
         "source_url": null
       },
       {
+        "title": "Arrangementer",
+        "filename": "Arrangementer_e5n-rkdCyLI_20260826_124331.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=e5n-rkdCyLI",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
         "title": "Climate Adaptation Summit 2024 - Mike Lippert",
         "filename": "Climate_Adaptation_Summit_2024_-_Mike_Lippert.mp3.txt",
         "type": "webinar",
         "youtube_url": null,
         "dnnk_url": null,
-        "source_url": null
-      },
-      {
-        "title": "Godmorgen med DNNK: Naturbaserede byer: vejen til klimarobusthed",
-        "filename": "Godmorgen_med_DNNK__Naturbaserede_byer___vejen_til_klimarobu.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=jUoQSfpQqAA",
-        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
     ]
@@ -5326,10 +5403,10 @@
         "source_url": null
       },
       {
-        "title": "Godmorgen med DNNK - Klimatilpasning i Tyborøn",
-        "filename": "Godmorgen_med_DNNK_nD4CvPsWxCY_20260806_171155.txt",
+        "title": "Arrangementer",
+        "filename": "Arrangementer_DaKuQ9hKYF0_20260826_121829.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=nD4CvPsWxCY",
+        "youtube_url": "https://youtube.com/watch?v=DaKuQ9hKYF0",
         "dnnk_url": null,
         "source_url": null
       }
@@ -5542,10 +5619,10 @@
         "source_url": null
       },
       {
-        "title": "Konferencer",
-        "filename": "Konferencer_NAtpQXRymvY_20260826_062809.txt",
+        "title": "Arrangementer",
+        "filename": "Arrangementer_DaKuQ9hKYF0_20260826_121829.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=NAtpQXRymvY",
+        "youtube_url": "https://youtube.com/watch?v=DaKuQ9hKYF0",
         "dnnk_url": null,
         "source_url": null
       }
@@ -7016,11 +7093,11 @@
         "source_url": null
       },
       {
-        "title": "Godmorgen med DNNK: Vand fra alle sider truer byerne: klimasikringen",
-        "filename": "Godmorgen_med_DNNK__Vand_fra_alle_sider_truer_byerne___klima.mp3.txt",
+        "title": "Risikokort CARMS demo",
+        "filename": "Oevrige_DHL6mwwN6c4_20260826_181942.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=rPUXKqmDCKg",
-        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
+        "youtube_url": "https://youtube.com/watch?v=DHL6mwwN6c4",
+        "dnnk_url": null,
         "source_url": null
       }
     ]
@@ -7443,19 +7520,19 @@
         "source_url": null
       },
       {
+        "title": "Øvrige",
+        "filename": "Oevrige_rIsvg0nHu58_20260831_170651.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=rIsvg0nHu58",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
         "title": "Godmorgen med DNNK: Vand fra alle sider truer byerne: klimasikringen",
         "filename": "Godmorgen_med_DNNK__Vand_fra_alle_sider_truer_byerne___klima.mp3.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=rPUXKqmDCKg",
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
-        "source_url": null
-      },
-      {
-        "title": "Oversvømmelser: beregninger, data og digitale værktøjer",
-        "filename": "Oversv_mmelser__beregninger__data_og_digitale_v_rkt_jer.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=HDclqvKaBzw",
-        "dnnk_url": "https://www.dnnk.dk/tech-talks/",
         "source_url": null
       }
     ]
@@ -7567,18 +7644,18 @@
         "source_url": null
       },
       {
-        "title": "Konferencer",
-        "filename": "Konferencer_FDhI9jFfQ4A_20260826_065646.txt",
+        "title": "Arrangementer",
+        "filename": "Arrangementer_cDfGMF9D7rQ_20260826_120523.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=FDhI9jFfQ4A",
+        "youtube_url": "https://youtube.com/watch?v=cDfGMF9D7rQ",
         "dnnk_url": null,
         "source_url": null
       },
       {
         "title": "Konferencer",
-        "filename": "Konferencer_PTYjtdkMxO8_20260826_062832.txt",
+        "filename": "Konferencer_FDhI9jFfQ4A_20260826_065646.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=PTYjtdkMxO8",
+        "youtube_url": "https://youtube.com/watch?v=FDhI9jFfQ4A",
         "dnnk_url": null,
         "source_url": null
       }
@@ -10534,6 +10611,14 @@
     "related_resources": [],
     "related_webinars": [
       {
+        "title": "Arrangementer",
+        "filename": "Arrangementer_cDfGMF9D7rQ_20260826_120523.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=cDfGMF9D7rQ",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
         "title": "Godmorgen med DNNK: Klimatilpasning og den grønne omstilling",
         "filename": "Godmorgen_med_DNNK___Klimatilpasning_og_den_gr_nne_omstillin.mp3.txt",
         "type": "webinar",
@@ -10546,14 +10631,6 @@
         "filename": "Tech_Talk_-_H_jtst_ende_grundvand_til_PtX.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=Vb8V4CNb8m4",
-        "dnnk_url": "https://www.dnnk.dk/tech-talks/",
-        "source_url": null
-      },
-      {
-        "title": "Tech Talk: Kunstig og menneskelig viden i den digitale vandforsyning",
-        "filename": "Tech_Talk__Kunstig_og_menneskelig_viden_i_den_digitale_vandf.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=PX2toTzJhJQ",
         "dnnk_url": "https://www.dnnk.dk/tech-talks/",
         "source_url": null
       }
@@ -10825,16 +10902,16 @@
         "source_url": null
       },
       {
-        "title": "Rockflow 01 oplæg",
-        "filename": "Rockflow_01_opl_g.mp3.txt",
+        "title": "Øvrige",
+        "filename": "Oevrige_9Mtbmb4TUAQ_20260826_163642.txt",
         "type": "webinar",
-        "youtube_url": null,
+        "youtube_url": "https://youtube.com/watch?v=9Mtbmb4TUAQ",
         "dnnk_url": null,
         "source_url": null
       },
       {
-        "title": "Rockflow 02 oplæg",
-        "filename": "Rockflow_02_opl_g.mp3.txt",
+        "title": "Rockflow 01 oplæg",
+        "filename": "Rockflow_01_opl_g.mp3.txt",
         "type": "webinar",
         "youtube_url": null,
         "dnnk_url": null,
@@ -11341,6 +11418,94 @@
     ]
   },
   {
+    "filename": "Oevrige_wEl5KwXTgmQ_20260907_102709.txt",
+    "path": "transcriptions/Oevrige_wEl5KwXTgmQ_20260907_102709.txt",
+    "folder": "transcriptions",
+    "type": "webinar",
+    "title": "Øvrige",
+    "category": "Øvrige",
+    "date": null,
+    "summary": "Webinar om klimatilpasning og vandteknologi på tværs af europæiske lande, arrangeret af DNNK på baggrund af en studietur til Hamburg. Præsentationen fokuserer på erfaringsudveksling mellem danske vandteknologivirksomheder og partnere fra Tyskland, Italien, Polen, Portugal, Spanien og Sverige om klimaudfordringer som oversvømmelser og tørke.",
+    "keywords": [
+      "klimatilpasning",
+      "vandteknologi",
+      "vandinfrastruktur",
+      "oversvømmelser",
+      "tørke",
+      "kommunal vandforsyning",
+      "internationale netværk",
+      "erfaringsudveksling",
+      "WTA Europe",
+      "EU-markeder"
+    ],
+    "speakers": [
+      {
+        "name": "Trina",
+        "org": "WTA Europe / Udenrigsministeriet"
+      },
+      {
+        "name": "Michael",
+        "org": "WTA Europe"
+      }
+    ],
+    "places": [
+      "Hamburg",
+      "Danmark",
+      "Tyskland",
+      "Italien",
+      "Polen",
+      "Portugal",
+      "Spanien",
+      "Sverige"
+    ],
+    "youtube_id": "wEl5KwXTgmQ",
+    "youtube_url": "https://youtube.com/watch?v=wEl5KwXTgmQ",
+    "dnnk_url": null,
+    "source_url": null,
+    "match_confidence": null,
+    "description": null,
+    "related_resources": [
+      {
+        "title": "Klimatilpasning: Oversvømmelser og Skadesberegning",
+        "url": "https://www.dnnk.dk/klimatilpasning-oversvoemmelser-og-skadesberegning/",
+        "source": "DNNK Rapporter",
+        "type": "📄 Dokument"
+      },
+      {
+        "title": "Samfundsøkonomi – oversvømmelser og klimatilpasning",
+        "url": "https://www.dnnk.dk/samfundsoekonomi-oversvoemmelser-og-klimatilpasning/",
+        "source": "DNNK Rapporter",
+        "type": "📄 Dokument"
+      }
+    ],
+    "related_webinars": [
+      {
+        "title": "Godmorgen med DNNK – Klimaændringernes effekt på vandkredsløbet",
+        "filename": "Godmorgen med DNNK – Klimaændringernes effekt på vandkredslø.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=fXCjmza5qP0",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
+        "source_url": null
+      },
+      {
+        "title": "Ny viden fra Arkitektskolen Aarhus: Landskabsarkitekter i fremtiden",
+        "filename": "Ny_viden_fra_Arkitektskolen_Aarhus__Landskabsarkitekter_i_fr.mp3.txt",
+        "type": "webinar",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
+        "title": "Tech Talk: Dynamisk modellering af oversvømmelser i praksis",
+        "filename": "Tech_Talk__Dynamisk_modellering_af_oversv_mmelser_i_praksis.mp3.txt",
+        "type": "webinar",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": null
+      }
+    ]
+  },
+  {
     "filename": "Bidragsmodeller_v.txt",
     "path": "transcriptions/Bidragsmodeller_v.txt",
     "folder": "transcritranscriptions",
@@ -11444,18 +11609,18 @@
     "related_resources": [],
     "related_webinars": [
       {
-        "title": "Tech Talk 002 - Fra oversvømmelse til risiko",
-        "filename": "Tech_Talk_002_-_Fra_oversv_mmelse_til_risiko.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=m1tgfbFMyvE",
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
         "title": "Øvrige",
         "filename": "Oevrige_rnL8O4Stv70_20260826_172756.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=rnL8O4Stv70",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
+        "title": "Tech Talk 002 - Fra oversvømmelse til risiko",
+        "filename": "Tech_Talk_002_-_Fra_oversv_mmelse_til_risiko.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=m1tgfbFMyvE",
         "dnnk_url": null,
         "source_url": null
       },
@@ -13091,18 +13256,18 @@
         "source_url": null
       },
       {
-        "title": "DNNKs virtuelle studietur til Klimabyen Middelfart",
-        "filename": "DNNKs_virtuelle_studietur_til_Klimabyen_Middelfart.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=HN2x08zNQ0k",
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
         "title": "Øvrige",
         "filename": "Oevrige__69RcnA53YY_20260826_162640.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=_69RcnA53YY",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
+        "title": "DNNKs virtuelle studietur til Klimabyen Middelfart",
+        "filename": "DNNKs_virtuelle_studietur_til_Klimabyen_Middelfart.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=HN2x08zNQ0k",
         "dnnk_url": null,
         "source_url": null
       }
@@ -13274,19 +13439,19 @@
         "source_url": null
       },
       {
+        "title": "Øvrige",
+        "filename": "Oevrige_hAU-rCQOZkA_20260826_151404.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=hAU-rCQOZkA",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
         "title": "DNNK Masterclass: Planlægning, drift og økonomi i LAR-anlæg v. KU, Del 1 af 3",
         "filename": "DNNK_Masterclass__Planl_gning__drift_og__konomi_i_LAR-anl_g_.mp3 (1).txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=HQL1SHsGkT0",
         "dnnk_url": "https://www.dnnk.dk/dnnk-masterclass-planlaegning-drift-og-oekonomi-i-lar-anlaeg-v-ku/",
-        "source_url": null
-      },
-      {
-        "title": "DNNK-Masterclass om håndtering af regnvand v. Teknologisk Institut",
-        "filename": "DNNK-Masterclass_om_h_ndtering_af_regnvand_v._Teknologisk_In.mp3 (1).txt",
-        "type": "webinar",
-        "youtube_url": null,
-        "dnnk_url": null,
         "source_url": null
       }
     ]
@@ -13841,10 +14006,10 @@
         "source_url": null
       },
       {
-        "title": "Ny viden fra Danmarks Universiteter – KU 1",
-        "filename": "Oevrige_-IZEwCGIcME_20260806_171312.txt",
+        "title": "Arrangementer",
+        "filename": "Arrangementer_DaKuQ9hKYF0_20260826_121829.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=-IZEwCGIcME",
+        "youtube_url": "https://youtube.com/watch?v=DaKuQ9hKYF0",
         "dnnk_url": null,
         "source_url": null
       }
@@ -14451,6 +14616,14 @@
     "related_resources": [],
     "related_webinars": [
       {
+        "title": "Øvrige",
+        "filename": "Oevrige_rnL8O4Stv70_20260826_172756.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=rnL8O4Stv70",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
         "title": "Byudvikling i forbindelse med stormfloods- og kystsikring af Danmark",
         "filename": "Byudvikling_i_forbindelse_med_stormflods-_og_kystsikring_af_ (3).txt",
         "type": "webinar",
@@ -14464,14 +14637,6 @@
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=rPUXKqmDCKg",
         "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
-        "source_url": null
-      },
-      {
-        "title": "Øvrige",
-        "filename": "Oevrige_rnL8O4Stv70_20260826_172756.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=rnL8O4Stv70",
-        "dnnk_url": null,
         "source_url": null
       }
     ],
@@ -15050,19 +15215,19 @@
     "related_resources": [],
     "related_webinars": [
       {
-        "title": "Godmorgen med DNNK – Skitsering af problematikker for vores kyster",
-        "filename": "Godmorgen med DNNK – Skitsering af problematikker for vores.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=1-A_PXpuxc8",
-        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
-        "source_url": null
-      },
-      {
         "title": "Samarbejde på tværs v. Henrik Vejre, professor ved Københavns Universitet",
         "filename": "Oevrige_PKlQbQZRZk0_20260826_180643.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=PKlQbQZRZk0",
         "dnnk_url": null,
+        "source_url": null
+      },
+      {
+        "title": "Godmorgen med DNNK – Skitsering af problematikker for vores kyster",
+        "filename": "Godmorgen med DNNK – Skitsering af problematikker for vores.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=1-A_PXpuxc8",
+        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       },
       {
@@ -15759,10 +15924,10 @@
         "source_url": null
       },
       {
-        "title": "Godmorgen med DNNK - Sociale dimensioner af klimatilpasning",
-        "filename": "Godmorgen_med_DNNK_ZnNmeyyKCok_20260807_073224.txt",
+        "title": "Godmorgen med DNNK",
+        "filename": "Godmorgen_med_DNNK_-9iAfpGkPQ4_20260826_113848.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=ZnNmeyyKCok",
+        "youtube_url": "https://youtube.com/watch?v=-9iAfpGkPQ4",
         "dnnk_url": null,
         "source_url": null
       }
@@ -16273,11 +16438,11 @@
         "source_url": null
       },
       {
-        "title": "Webinar om jura - Kystkjura og klimaaspekter",
-        "filename": "Webinar_om_jura_-_Kystjura_og_klimaaspekter.mp3.txt",
+        "title": "Arrangementer",
+        "filename": "Arrangementer_ZVkyCW5IMTU_20260826_115854.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=VhqwsCBh1pU",
-        "dnnk_url": "https://www.dnnk.dk/jura-i-klimatilpasning/",
+        "youtube_url": "https://youtube.com/watch?v=ZVkyCW5IMTU",
+        "dnnk_url": null,
         "source_url": null
       }
     ]
@@ -16527,18 +16692,18 @@
         "source_url": null
       },
       {
-        "title": "Rockflow 03 oplæg",
-        "filename": "Rockflow_03_opl_g.mp3.txt",
-        "type": "webinar",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
         "title": "Øvrige",
         "filename": "Oevrige_Dimz8qW_8io_20260826_155019.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=Dimz8qW_8io",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
+        "title": "Rockflow 03 oplæg",
+        "filename": "Rockflow_03_opl_g.mp3.txt",
+        "type": "webinar",
+        "youtube_url": null,
         "dnnk_url": null,
         "source_url": null
       }
@@ -16603,10 +16768,10 @@
         "source_url": null
       },
       {
-        "title": "DNNK-Masterclass om håndtering af regnvand v. Teknologisk Institut",
-        "filename": "DNNK-Masterclass_om_h_ndtering_af_regnvand_v._Teknologisk_In.mp3.txt",
+        "title": "Øvrige",
+        "filename": "Oevrige__69RcnA53YY_20260826_162640.txt",
         "type": "webinar",
-        "youtube_url": null,
+        "youtube_url": "https://youtube.com/watch?v=_69RcnA53YY",
         "dnnk_url": null,
         "source_url": null
       }
@@ -17155,11 +17320,11 @@
         "source_url": null
       },
       {
-        "title": "Byerne og det stigende havvand 1 Risikostyring og sikkerhed",
-        "filename": "Byerne og det stigende havvand 1  Risikostyring og sikkerhed.txt",
+        "title": "Øvrige",
+        "filename": "Oevrige_rnL8O4Stv70_20260826_172756.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=6SnZ_YYPRWs",
-        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
+        "youtube_url": "https://youtube.com/watch?v=rnL8O4Stv70",
+        "dnnk_url": null,
         "source_url": null
       }
     ],
@@ -18099,10 +18264,10 @@
         "source_url": null
       },
       {
-        "title": "Konferencer",
-        "filename": "Konferencer_NAtpQXRymvY_20260826_062809.txt",
+        "title": "Arrangementer",
+        "filename": "Arrangementer_mWG_TwwiPkw_20260826_122559.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=NAtpQXRymvY",
+        "youtube_url": "https://youtube.com/watch?v=mWG_TwwiPkw",
         "dnnk_url": null,
         "source_url": null
       }
@@ -18146,6 +18311,14 @@
     "related_resources": [],
     "related_webinars": [
       {
+        "title": "Arrangementer",
+        "filename": "Arrangementer_e5n-rkdCyLI_20260826_124331.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=e5n-rkdCyLI",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
         "title": "Konferencer",
         "filename": "Konferencer_rt_8ZVkLhms_20260826_062844.txt",
         "type": "webinar",
@@ -18159,14 +18332,6 @@
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=zpzBuv6P0ys",
         "dnnk_url": "https://www.dnnk.dk/tech-talks/",
-        "source_url": null
-      },
-      {
-        "title": "Arrangementer",
-        "filename": "Arrangementer_e5n-rkdCyLI_20260826_124331.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=e5n-rkdCyLI",
-        "dnnk_url": null,
         "source_url": null
       }
     ]
@@ -18400,18 +18565,18 @@
     "related_resources": [],
     "related_webinars": [
       {
-        "title": "Optagelse af Pitch 6 DRYP",
-        "filename": "Optagelse_af_Pitch_6_DRYP.mp3.txt",
-        "type": "webinar",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
         "title": "Arrangementer",
         "filename": "Arrangementer_mWG_TwwiPkw_20260826_122559.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=mWG_TwwiPkw",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
+        "title": "Optagelse af Pitch 6 DRYP",
+        "filename": "Optagelse_af_Pitch_6_DRYP.mp3.txt",
+        "type": "webinar",
+        "youtube_url": null,
         "dnnk_url": null,
         "source_url": null
       },
@@ -18855,19 +19020,19 @@
         "source_url": null
       },
       {
+        "title": "Øvrige",
+        "filename": "Oevrige_hAU-rCQOZkA_20260826_151404.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=hAU-rCQOZkA",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
         "title": "DNNK Masterclass: Planlægning, drift og økonomi i LAR-anlæg v. KU, Del 1 af 3",
         "filename": "DNNK_Masterclass__Planl_gning__drift_og__konomi_i_LAR-anl_g_.mp3 (1).txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=HQL1SHsGkT0",
         "dnnk_url": "https://www.dnnk.dk/dnnk-masterclass-planlaegning-drift-og-oekonomi-i-lar-anlaeg-v-ku/",
-        "source_url": null
-      },
-      {
-        "title": "Godmorgen med DNNK: Køge Nord: Tværfaglig samarbejdsform",
-        "filename": "Godmorgen_med_DNNK__K_ge_Nord___Tv_rfaglig_samarbejdsform__i.mp3.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=J4sXEpKWfJU",
-        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
         "source_url": null
       }
     ],
@@ -19666,18 +19831,18 @@
         "source_url": null
       },
       {
-        "title": "DNNKs virtuelle studietur - hydroseparatoren",
-        "filename": "DNNKs_virtuelle_studietur_-_hydroseperatoren.txt",
+        "title": "Øvrige",
+        "filename": "Oevrige__69RcnA53YY_20260826_162640.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=AsevUr50sDE",
+        "youtube_url": "https://youtube.com/watch?v=_69RcnA53YY",
         "dnnk_url": null,
         "source_url": null
       },
       {
-        "title": "Rockflow 02 oplæg",
-        "filename": "Rockflow_02_opl_g.mp3.txt",
+        "title": "DNNKs virtuelle studietur - hydroseparatoren",
+        "filename": "DNNKs_virtuelle_studietur_-_hydroseperatoren.txt",
         "type": "webinar",
-        "youtube_url": null,
+        "youtube_url": "https://youtube.com/watch?v=AsevUr50sDE",
         "dnnk_url": null,
         "source_url": null
       }
@@ -19948,10 +20113,10 @@
         "source_url": null
       },
       {
-        "title": "DNNKs virtuelle studietur til Skibhuskvarteret i Odense",
-        "filename": "DNNKs_virtuelle_studietur_til_Skibhuskvarteret_i_Odense.txt",
+        "title": "Arrangementer",
+        "filename": "Arrangementer_zQ7nBjYq6Mk_20260826_115054.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=4h-LgQEW98M",
+        "youtube_url": "https://youtube.com/watch?v=zQ7nBjYq6Mk",
         "dnnk_url": null,
         "source_url": null
       }
@@ -19994,14 +20159,6 @@
     "related_resources": [],
     "related_webinars": [
       {
-        "title": "Optagelse af Pitch 3 Remoni",
-        "filename": "Optagelse_af_Pitch_3_Remoni.mp3.txt",
-        "type": "webinar",
-        "youtube_url": null,
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
         "title": "Arrangementer",
         "filename": "Arrangementer_mWG_TwwiPkw_20260826_122559.txt",
         "type": "webinar",
@@ -20010,10 +20167,18 @@
         "source_url": null
       },
       {
-        "title": "Konferencer",
-        "filename": "Konferencer_FDhI9jFfQ4A_20260826_065646.txt",
+        "title": "Optagelse af Pitch 3 Remoni",
+        "filename": "Optagelse_af_Pitch_3_Remoni.mp3.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=FDhI9jFfQ4A",
+        "youtube_url": null,
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
+        "title": "Øvrige",
+        "filename": "Oevrige_wEl5KwXTgmQ_20260907_102709.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=wEl5KwXTgmQ",
         "dnnk_url": null,
         "source_url": null
       }
@@ -20246,10 +20411,10 @@
         "source_url": null
       },
       {
-        "title": "DNNK Masterclass om håndtering af regnvand v. Teknologisk Institut",
-        "filename": "DNNK_Masterclass_om_h_ndtering_af_regnvand_v._Teknologisk_In.mp3.txt",
+        "title": "Øvrige",
+        "filename": "Oevrige_Be8WiDJYFsg_20260826_164736.txt",
         "type": "webinar",
-        "youtube_url": null,
+        "youtube_url": "https://youtube.com/watch?v=Be8WiDJYFsg",
         "dnnk_url": null,
         "source_url": null
       }
@@ -20752,18 +20917,18 @@
     "related_resources": [],
     "related_webinars": [
       {
-        "title": "Øvrige",
-        "filename": "Oevrige_0jnsC5JPHvA_20260826_063219.txt",
-        "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=0jnsC5JPHvA",
-        "dnnk_url": null,
-        "source_url": null
-      },
-      {
         "title": "Arrangementer",
         "filename": "Arrangementer_e5n-rkdCyLI_20260826_124331.txt",
         "type": "webinar",
         "youtube_url": "https://youtube.com/watch?v=e5n-rkdCyLI",
+        "dnnk_url": null,
+        "source_url": null
+      },
+      {
+        "title": "Øvrige",
+        "filename": "Oevrige_0jnsC5JPHvA_20260826_063219.txt",
+        "type": "webinar",
+        "youtube_url": "https://youtube.com/watch?v=0jnsC5JPHvA",
         "dnnk_url": null,
         "source_url": null
       },
@@ -21018,18 +21183,18 @@
         "source_url": null
       },
       {
-        "title": "DAPP, scenarier og vand fra alle kilder – erfaringer fra LAVA",
-        "filename": "Tech_Talks_Z4-52YNHRz0_20260806_171125.txt",
+        "title": "Arrangementer",
+        "filename": "Arrangementer_e5n-rkdCyLI_20260826_124331.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=Z4-52YNHRz0",
+        "youtube_url": "https://youtube.com/watch?v=e5n-rkdCyLI",
         "dnnk_url": null,
         "source_url": null
       },
       {
-        "title": "Godmorgen med DNNK - Træer som værktøj i klimatilpasning",
-        "filename": "Godmorgen_med_DNNK_Z7NWvXdZE7g_20260806_171137.txt",
+        "title": "DAPP, scenarier og vand fra alle kilder – erfaringer fra LAVA",
+        "filename": "Tech_Talks_Z4-52YNHRz0_20260806_171125.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=Z7NWvXdZE7g",
+        "youtube_url": "https://youtube.com/watch?v=Z4-52YNHRz0",
         "dnnk_url": null,
         "source_url": null
       }
@@ -22198,16 +22363,16 @@
         "source_url": null
       },
       {
-        "title": "DNNK Masterclass om håndtering af regnvand v. Teknologisk Institut",
-        "filename": "DNNK_Masterclass_om_h_ndtering_af_regnvand_v._Teknologisk_In.mp3.txt",
+        "title": "Arrangementer",
+        "filename": "Arrangementer_DaKuQ9hKYF0_20260826_121829.txt",
         "type": "webinar",
-        "youtube_url": null,
+        "youtube_url": "https://youtube.com/watch?v=DaKuQ9hKYF0",
         "dnnk_url": null,
         "source_url": null
       },
       {
-        "title": "DNNK-Masterclass om håndtering af regnvand v. Teknologisk Institut",
-        "filename": "DNNK-Masterclass_om_h_ndtering_af_regnvand_v._Teknologisk_In.mp3 (1).txt",
+        "title": "DNNK Masterclass om håndtering af regnvand v. Teknologisk Institut",
+        "filename": "DNNK_Masterclass_om_h_ndtering_af_regnvand_v._Teknologisk_In.mp3.txt",
         "type": "webinar",
         "youtube_url": null,
         "dnnk_url": null,
@@ -22259,18 +22424,18 @@
         "source_url": null
       },
       {
-        "title": "Konferencer",
-        "filename": "Konferencer_UBAR1IG7kQ4_20260826_063835.txt",
+        "title": "Arrangementer",
+        "filename": "Arrangementer_e5n-rkdCyLI_20260826_124331.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=UBAR1IG7kQ4",
+        "youtube_url": "https://youtube.com/watch?v=e5n-rkdCyLI",
         "dnnk_url": null,
         "source_url": null
       },
       {
-        "title": "DNNK Masterclass om håndtering af regnvand v. Teknologisk Institut",
-        "filename": "DNNK_Masterclass_om_h_ndtering_af_regnvand_v._Teknologisk_In.mp3.txt",
+        "title": "Konferencer",
+        "filename": "Konferencer_UBAR1IG7kQ4_20260826_063835.txt",
         "type": "webinar",
-        "youtube_url": null,
+        "youtube_url": "https://youtube.com/watch?v=UBAR1IG7kQ4",
         "dnnk_url": null,
         "source_url": null
       }
@@ -22395,11 +22560,11 @@
         "source_url": null
       },
       {
-        "title": "Godmorgen med DNNK: Vand fra alle sider truer byerne: klimasikringen",
-        "filename": "Godmorgen_med_DNNK__Vand_fra_alle_sider_truer_byerne___klima.mp3.txt",
+        "title": "Vand fra alle sider",
+        "filename": "Oevrige_HQRq2cgHreE_20260826_182952.txt",
         "type": "webinar",
-        "youtube_url": "https://youtube.com/watch?v=rPUXKqmDCKg",
-        "dnnk_url": "https://www.dnnk.dk/god-morgen-med-dnnk/",
+        "youtube_url": "https://youtube.com/watch?v=HQRq2cgHreE",
+        "dnnk_url": null,
         "source_url": null
       }
     ]
